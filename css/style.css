@@ -12,7 +12,7 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background-image: url(../img//background.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@ body {
 .runway {
   width: 100%;
   height: 200px;
-  background: url(../img//road.jpg);
+  background: url(../img/road.jpg);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -44,9 +44,11 @@ body {
   0% {
     transform: translateX(0px) translateY(0px) rotate(0deg);
   }
+
   30% {
     transform: translateX(-500px) translateY(0px) rotate(0deg);
   }
+
   100% {
     transform: translateX(-1500px) translateY(-200px) rotate(20deg);
   }
@@ -94,14 +96,13 @@ body {
 .content {
   width: 75%;
   height: 500px;
-  padding: 20px;
+  position: absolute;
+  top: 18%;
+  left: 12.5%;
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  position: absolute;
-  top: 18%;
-  left: 12.5%;
   padding: 12px;
   border-radius: 20px;
 }
@@ -109,7 +110,7 @@ body {
 .hero-heading {
   margin: 10px auto;
   width: 40%;
-  background-color: #5c8aef;
+  background-color: #5c81ef;
   padding: 10px 0;
   text-align: center;
   border-radius: 12px;
@@ -173,8 +174,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 20px;
   border: none;
+  font-size: 20px;
   margin: 0 auto;
   cursor: pointer;
   display: block;
@@ -182,7 +183,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url(/images/road.jpg);
+    background-image: url(../img/road.jpg);
   }
 
   .airplane {
@@ -217,7 +218,7 @@ body {
 
   .banner img {
     width: 100%;
-    border-radius: 0;
+    border-radius: 10px;
     margin-top: 40px;
   }
 }
